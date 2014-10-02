@@ -1,0 +1,141 @@
+<cacti>	
+	<hash_0100240282fd818ca684c225ecce0be548d731>
+		<name>Resque Workers DT</name>
+		<ds>
+			<t_name></t_name>
+			<name>|host_description| - Resque Workers</name>
+			<data_input_id>hash_030024a0d5cbb9a30ad2ab63adb79bc5deebbd</data_input_id>
+			<t_rra_id></t_rra_id>
+			<t_rrd_step></t_rrd_step>
+			<rrd_step>60</rrd_step>
+			<t_active></t_active>
+			<active>on</active>
+			<rra_items>hash_150024c21df5178e5c955013591239eb0afd46|hash_1500240d9c0af8b8acdc7807943937b3208e29|hash_1500246fc2d038fb42950138b0ce3e9874cc60|hash_150024e36f3adb9f152adfa5dc50fd2b23337e|hash_150024283ea2bf1634d92ce081ec82a634f513</rra_items>
+		</ds>
+		<items>
+			<hash_08002471d8679c51bf263b6ed4a09563890343>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>RESQUE_wrkrs_wrking</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>18446744073709551615</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_070024179b2e24f5d523c5a26fef13f01806f2</data_input_field_id>
+			</hash_08002471d8679c51bf263b6ed4a09563890343>
+			<hash_080024ec8c22c1185a80cbcd3f392c48f73137>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>RESQUE_wrkrs</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>18446744073709551615</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>120</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_070024b00972ec8a8a782d0bc01a732afb3778</data_input_field_id>
+			</hash_080024ec8c22c1185a80cbcd3f392c48f73137>
+		</items>
+		<data>
+			<item_000>
+				<data_input_field_id>hash_070024db30f0851136a950be18b79c864b85ba</data_input_field_id>
+				<t_value></t_value>
+				<value>6379</value>
+			</item_000>
+			<item_001>
+				<data_input_field_id>hash_070024764e06018c57fa9175c8d1fbf60e600b</data_input_field_id>
+				<t_value></t_value>
+				<value></value>
+			</item_001>
+		</data>
+	</hash_0100240282fd818ca684c225ecce0be548d731>
+	<hash_030024a0d5cbb9a30ad2ab63adb79bc5deebbd>
+		<name>Resque Stats IM</name>
+		<type_id>1</type_id>
+		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --items nw,nww</input_string>
+		<fields>
+			<hash_070024764e06018c57fa9175c8d1fbf60e600b>
+				<name>Hostname</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code>hostname</type_code>
+				<input_output>in</input_output>
+				<data_name>hostname</data_name>
+			</hash_070024764e06018c57fa9175c8d1fbf60e600b>
+			<hash_070024b00972ec8a8a782d0bc01a732afb3778>
+				<name>Resque Number of Workers</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>nw</data_name>
+			</hash_070024b00972ec8a8a782d0bc01a732afb3778>
+			<hash_070024179b2e24f5d523c5a26fef13f01806f2>
+				<name>Resque Number of Workers working</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>nww</data_name>
+			</hash_070024179b2e24f5d523c5a26fef13f01806f2>
+			<hash_070024db30f0851136a950be18b79c864b85ba>
+				<name>Port</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls>on</allow_nulls>
+				<type_code></type_code>
+				<input_output>in</input_output>
+				<data_name>port</data_name>
+			</hash_070024db30f0851136a950be18b79c864b85ba>
+		</fields>
+	</hash_030024a0d5cbb9a30ad2ab63adb79bc5deebbd>
+	<hash_150024c21df5178e5c955013591239eb0afd46>
+		<name>Daily (5 Minute Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>1</steps>
+		<rows>600</rows>
+		<timespan>86400</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_150024c21df5178e5c955013591239eb0afd46>
+	<hash_1500240d9c0af8b8acdc7807943937b3208e29>
+		<name>Weekly (30 Minute Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>6</steps>
+		<rows>700</rows>
+		<timespan>604800</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_1500240d9c0af8b8acdc7807943937b3208e29>
+	<hash_1500246fc2d038fb42950138b0ce3e9874cc60>
+		<name>Monthly (2 Hour Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>24</steps>
+		<rows>775</rows>
+		<timespan>2678400</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_1500246fc2d038fb42950138b0ce3e9874cc60>
+	<hash_150024e36f3adb9f152adfa5dc50fd2b23337e>
+		<name>Yearly (1 Day Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>288</steps>
+		<rows>1500</rows>
+		<timespan>33053184</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_150024e36f3adb9f152adfa5dc50fd2b23337e>
+	<hash_150024283ea2bf1634d92ce081ec82a634f513>
+		<name>Hourly (1 Minute Average)</name>
+		<x_files_factor>0.5</x_files_factor>
+		<steps>1</steps>
+		<rows>525600</rows>
+		<timespan>3600</timespan>
+		<cf_items>1|3</cf_items>
+	</hash_150024283ea2bf1634d92ce081ec82a634f513>
+</cacti>
