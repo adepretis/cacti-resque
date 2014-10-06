@@ -217,7 +217,7 @@
 		</data>
 	</hash_0100240282fd818ca684c225ecce0be548d731>
 	<hash_030024a0d5cbb9a30ad2ab63adb79bc5deebbd>
-		<name>Resque Stats IM</name>
+		<name>Resque Workers IM</name>
 		<type_id>1</type_id>
 		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --items nw,nww</input_string>
 		<fields>
@@ -252,7 +252,7 @@
 				<name>Port</name>
 				<update_rra></update_rra>
 				<regexp_match></regexp_match>
-				<allow_nulls>on</allow_nulls>
+				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>in</input_output>
 				<data_name>port</data_name>
