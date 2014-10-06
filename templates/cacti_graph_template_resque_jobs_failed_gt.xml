@@ -121,7 +121,7 @@
 	<hash_0300243d3cf6218b827920f9bf75adb9bcd010>
 		<name>Resque Failed Jobs IM</name>
 		<type_id>1</type_id>
-		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --items fj</input_string>
+		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --mode im --items fj</input_string>
 		<fields>
 			<hash_0700249d9ba35cfae62086c16086936afc3a90>
 				<name>Hostname</name>

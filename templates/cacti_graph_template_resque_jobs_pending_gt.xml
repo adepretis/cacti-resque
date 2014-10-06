@@ -147,7 +147,7 @@
 	<hash_03002422578fbb10560dbe9280fa033451a97d>
 		<name>Resque Pending Jobs IM</name>
 		<type_id>1</type_id>
-		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --items pj</input_string>
+		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --mode im --items pj</input_string>
 		<fields>
 			<hash_070024726b6d426519eaf35e5cbebea287fb56>
 				<name>Resque Number of Jobs pending</name>

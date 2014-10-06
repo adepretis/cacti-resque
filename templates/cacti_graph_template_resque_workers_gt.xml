@@ -219,7 +219,7 @@
 	<hash_030024a0d5cbb9a30ad2ab63adb79bc5deebbd>
 		<name>Resque Workers IM</name>
 		<type_id>1</type_id>
-		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --items nw,nww</input_string>
+		<input_string>/usr/bin/ruby &lt;path_cacti&gt;/scripts/resque_stats.rb --host &lt;hostname&gt;:&lt;port&gt; --mode im --items nw,nww</input_string>
 		<fields>
 			<hash_070024764e06018c57fa9175c8d1fbf60e600b>
 				<name>Hostname</name>
