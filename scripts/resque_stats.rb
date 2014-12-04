@@ -48,8 +48,7 @@ def get_dq_value(value, queue)
 			exit(false)
 		end
 	else
-		printf("ERROR: invalid --get queue name\n")
-		exit(false)
+		printf("%d\n", 0)
 	end
 end
 
