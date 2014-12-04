@@ -71,7 +71,7 @@ Cacti Data Query
 
 --index
 
---get
+--get jobs <queue_name>
 
 --num_indexes
 
